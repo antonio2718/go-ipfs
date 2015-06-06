@@ -2,7 +2,7 @@
 ifeq ($(TEST_NO_FUSE),1)
 go_test=go test -tags nofuse
 else
-go_test=go test
+go_test=go test -v -p 1
 endif
 
 
